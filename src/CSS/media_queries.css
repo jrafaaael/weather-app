@@ -1,0 +1,43 @@
+@media all and (min-width: 750px) {
+    .description {
+        display: block;
+    }
+
+    td[class*="temp"] {
+        display: table-cell;
+    }
+}
+
+@media all and (min-width: 1050px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        width: 100%;
+        max-width: 1000px !important;
+        margin: 0 !important;
+        border-radius: 10px;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+        flex-direction: row !important;
+    }
+
+    main > section {
+        width: 100% !important;
+    }
+
+    .left-sidevar {
+        gap: 1.5rem;
+    }
+
+    .other-information {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .chart-container {
+        max-height: 250px;
+        max-width: 500px;
+    }
+}

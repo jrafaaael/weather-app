@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Recursive:wght@300;400;500;600;700;800;900&display=swap");
+
+/* @import url("/CSS/loader.css");
+@import url("/CSS/left_sidevar.css");
+@import url("/CSS/right_sidevar.css");
+@import url("/CSS/media_queries.css"); */
+
+@import url('./loader.css');
+@import url('./left_sidevar.css');
+@import url('./right_sidevar.css');
+@import url('./media_queries.css');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(225, 255, 243);
+    --secondary-color: snow;
+    --tertiary-color: #5264ae;
+    --quaternary-color: #fee887;
+    --primary-font-color: #333;
+}
+
+html,
+body,
+#loader {
+    width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--primary-font-color);
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.1rem;
+    overflow: hidden;
+}
+
+main {
+    padding: 2rem 1.5rem;
+    background-color: var(--secondary-color);
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Recursive", sans-serif;
+    text-align: center;
+}
+
+button,
+input[type="text"] {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+img,
+svg {
+    display: block;
+}
+
+main > section {
+    width: 100%;
+}
+
+#loader {
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}

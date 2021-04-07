@@ -1,0 +1,66 @@
+.right-sidevar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 1rem; */
+}
+
+.right-sidevar > * {
+    width: 100%;
+}
+
+/* chart */
+.chart-container {
+    max-width: 600px;
+    height: 40vh;
+    position: relative;
+}
+
+/* next days table */
+table {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 0 1rem;
+}
+
+tr:hover {
+    background-color: var(--quaternary-color);
+}
+
+td {
+    padding: 0.75rem;
+    text-overflow: ellipsis;
+    text-align: center; 
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+td > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+table svg {
+    width: 20px;
+}
+
+table img {
+    width: 35px;
+}
+
+td[class*="temp"] svg {
+    width: 15px;
+}
+
+td[class*="temp"] {
+    display: none;
+}
+
+.day {
+    font-weight: 600;
+} 

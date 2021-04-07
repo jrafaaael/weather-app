@@ -1,0 +1,149 @@
+/* @import url("/CSS/input_text.css"); */
+@import url("./input_text.css");
+
+.left-sidevar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+/* searchbar */
+#searchbar {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+#city {
+    border-radius: 10px;
+}
+
+#search svg {
+    width: 28px;
+}
+
+#your-location svg {
+    width: 17.5px;
+}
+
+#search > svg > path:nth-child(2) {
+    transform-origin: 50% 50%;
+}
+
+#search > svg > path:nth-child(2),
+#your-location svg {
+    transition: all ease 250ms;
+}
+
+#search:hover > svg > path:nth-child(2) {
+    transform: rotate(25deg) translate(-1px, 1px);
+}
+
+#your-location:hover svg {
+    transform: rotate(25deg);
+}
+
+/* current data */
+.current-data {
+    width: 100%;
+}
+
+/* main information */
+/* location name */
+#location-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* date */
+.date-container {
+    margin: 0.5rem 0 0.75rem 0;
+}
+
+#date {
+    font-weight: 400;
+}
+
+/* temperature and icon */
+.temperature-and-icon-container {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#animation-container {
+    width: 25%;
+    max-width: 150px;
+}
+
+#animation-container svg {
+    transform: none !important;
+}
+
+#temperature {
+    font-size: clamp(1.5rem, 6vw, 3.5rem);
+}
+
+#temperature sup {
+    font-size: clamp(0.5rem, 3vw, 1.5rem);
+}
+
+#icon-description {
+    font-size: clamp(1rem, 4.5vw, 1.6rem);
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* other information */
+.other-information {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 2rem 0;
+}
+
+.other-information > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.other-information svg {
+    width: 35px;
+}
+
+.description {
+    display: none;
+}
+
+.humidity-container svg {
+    width: 22.5px;
+}
+
+.dew-point-container svg {
+    width: 26px;
+}
+
+.pressure-container svg {
+    width: 37px;
+}
+
+.value p {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.value sup {
+    font-weight: normal;
+}
